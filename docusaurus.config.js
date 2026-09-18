@@ -133,7 +133,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Welcome',
                 to: '/welcome',
               },
               {
