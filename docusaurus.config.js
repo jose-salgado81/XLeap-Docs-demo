@@ -44,7 +44,7 @@ const config = {
     'docusaurus-plugin-image-zoom',
   ],
 
- presets: [
+  presets: [
   [
     'classic',
     /** @type {import('@docusaurus/preset-classic').Options} */
@@ -54,7 +54,7 @@ const config = {
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         //editUrl:
-       //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
       },
       blog: false, // Disables the blog plugin completely
       theme: {
@@ -108,7 +108,7 @@ const config = {
             items: [
               {
                 label: '7.1.0-Beta92-68795',
-                to: '/docs/welcome',
+                to: '/docs/process_designer/intro_to_process_designer',
               },
             ],
           },
@@ -133,8 +133,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Welcome',
-                to: '/welcome',
+                label: 'Process Designer',
+                to: '/docs/process_designer/intro_to_process_designer',
               },
               {
                 label: 'GitHub',
