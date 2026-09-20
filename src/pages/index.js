@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/invitationdialogue/Login Requirements">
-            Manual for 7.1.0-Beta92-68795
+            Knowledge Base for 7.1.0-Beta92-68795
           </Link>
         </div>
       </div>
