@@ -120,21 +120,17 @@ const config = {
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'X',
                 href: 'https://x.com/docusaurus',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Made with',
             items: [
               {
-                label: 'Process Designer',
-                to: '/docs/process_designer/intro_to_process_designer',
+                label: 'Docusaurus',
+                to: 'https://docusaurus.io/',
               },
               {
                 label: 'GitHub',
@@ -143,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with [Docusaurus](https://docusaurus.io/).`,
       },
       prism: {
         theme: prismThemes.github,
