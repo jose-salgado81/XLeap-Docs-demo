@@ -107,15 +107,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: '7.1.0-Beta92-68795',
-                to: '/docs/process_designer/intro_to_process_designer',
-              },
-            ],
-          },
+         
           {
             title: 'Other Resources',
             items: [
