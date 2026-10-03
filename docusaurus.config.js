@@ -130,20 +130,24 @@ const config = {
             ],
           },
           {
-            title: 'Source Code',
+            title: 'Code and Deployment',
             items: [
               {
-                label: 'This Knowledge Base on GitHub', ',
-                to: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',
+                label: 'This Demo files on GitHub', 
+                href: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',                
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'The Docusaurus engine',
+                href: 'https://docusaurus.io/',
+              },
+            {
+                label: 'Deployed using Vercel',
+                href: 'https://vercel.com/frameworks/nextjs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with [Docusaurus](https://docusaurus.io/).`,
+        copyright: `Copyright © ${new Date().getFullYear()} An Open Source Knowledge Base Demo Project`,
       },
       prism: {
         theme: prismThemes.github,
@@ -153,3 +157,5 @@ const config = {
 };
 
 export default config;
+
+
