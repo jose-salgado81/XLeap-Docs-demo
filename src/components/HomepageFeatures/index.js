@@ -7,9 +7,9 @@ const FeatureList = [
     title: 'Easy to Use',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+<>
+        This knowledge base uses the <a href="https://docusaurus.io/docs">Docusaurus</a> engine (open-source), the articles are written in Markdown, and the website is generated automatically. 
+        You can easily add new articles or update existing ones using an editor like Visual Studio Code.
       </>
     ),
   },
@@ -18,9 +18,10 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+        After setting it up, you just focus on writing and categorizing your articles. 
+        Preview the updates and commmit the changes to GitHub.
+        There is complete transparency and version control of all changes.
+             </>
     ),
   },
   {
@@ -28,8 +29,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Use all kinds of artifacts to enrich your articles and improve the user experience.
+        Your documentation is now a tool for marketing, training, and support.
       </>
     ),
   },

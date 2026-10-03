@@ -88,26 +88,22 @@ const config = {
         },
       },
       navbar: {
-        title: 'XLeap Docs',
-        logo: {
-          alt: 'XLeap Logo',
-          src: 'img/xleapicon.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Knowledge Base',
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
+  title: 'XLeap Docs',
+  logo: {
+    alt: 'XLeap Logo',
+    src: 'img/xleapicon.svg',
+  },
+  items: [
+    {
+      type: 'docSidebar',
+      sidebarId: 'tutorialSidebar',
+      position: 'left',
+      label: 'Knowledge Base',
+    },
+    // {to: '/blog', label: 'Blog', position: 'left'},
+    // The GitHub item has been removed here
+  ],
+},
       footer: {
         style: 'dark',
         links: [
