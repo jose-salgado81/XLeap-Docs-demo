@@ -1,12 +1,11 @@
 {
   "label": "About this demo",
-  "position": 3,
+  "position": 1,
   "link": {
     "type": "generated-index",
     "description": "Brief description of what this section covers."
   }
 }
-
 
 
 
