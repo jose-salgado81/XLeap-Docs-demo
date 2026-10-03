@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/about/Why Knowlege Base">
-            Knowledge Base for 7.1.0-Beta92-68795
+             Enter the Knowledge Base
           </Link>
         </div>
       </div>
