@@ -28,3 +28,10 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+.zoomable-thumbnail {
+  max-width: 300px;
+  width: 100%;
+  cursor: zoom-in;
+}

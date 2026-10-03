@@ -40,6 +40,14 @@ const config = {
     locales: ['en'],
   },
 
+  // Habilitar Mermaid en Markdown
+  markdown: {
+    mermaid: true,
+  },
+
+  // Registrar el tema de Mermaid
+  themes: ['@docusaurus/theme-mermaid'],
+
   plugins: [
     'docusaurus-plugin-image-zoom',
   ],
