@@ -9,18 +9,14 @@ You might be wondering why would you want a knowledge base, when the documentati
 
 ## Continuous Updates and Version Control
 
-If you follow a Continuous Integration - Continuous Deployment approach for your software project you are constantly updating your code and consequently your documentation needs
-to be updated as well, ideally the very same moment the code is deployed to production. You don't want to have a mismatch between the documentation and the latest version of
-the software in production. Docs-as-Code is a neat approach that ensures coherence in the experience of the user of the software and the user of the documentation.
-The knowledge base files are contained in a git repository, in this example I'm using GitHub. This allows team members to create  new branches to develop changes in the 
-current documentation without altering the main branch with the latest stable files. Once the changes are complete and tested, the knowledge base manager can merge the changes
- to main. By using git and github there is great control over changes made throughout time, allowing to quickly correct a change or roll back to an entire different version of the
-knowledge base. Every change that is committed is commented so that there is clarity on what the change is, who made it, and what was its purpose.
+In a Continuous Integration/Continuous Deployment workflow, documentation must evolve alongside your code to prevent mismatches.
+ The Docs-as-Code approach manages your knowledge base in a Git repository like GitHub, allowing team members to draft and 
+ test updates in separate branches before merging them into production. This setup provides complete version control, 
+ tracking history and comments so you can easily audit changes or roll back versions. Ultimately, treating documentation as code
+  ensures users always access accurate, up-to-date information that matches your latest software releases.
 
 ![Git Comment](./img/git%20comment.png)
 
-Even if you are not deploying new changes often,  treating your documentation as code allows tight version control and ensures your users are always accessing the latest version of
-your documentation. 
 
 ## Display Adaptiveness.
 
