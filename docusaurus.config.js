@@ -117,24 +117,24 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Other Resources',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Your company website',
+                href: 'https://xleap.net',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Your YouTube Channel',
+                href: 'https://www.youtube.com/@saasvideotutorials',
               },
             ],
           },
           {
-            title: 'Made with',
+            title: 'Source Code',
             items: [
               {
-                label: 'Docusaurus',
-                to: 'https://docusaurus.io/',
+                label: 'This Knowledge Base on GitHub', ',
+                to: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',
               },
               {
                 label: 'GitHub',
