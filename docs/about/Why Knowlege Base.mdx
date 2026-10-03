@@ -7,7 +7,7 @@ sidebar_position: 1
 You might be wondering why would you want a knowledge base, when the documentation of your software (including SaaS) can be contained in a standard PDF file. In this article
  you will learn why a knowledge base is a superior approach to software documentation.
 
-## CI/CD 
+## Continuous Updates and Version Control
 
 If you follow a Continuous Integration - Continuous Deployment approach for your software project you are constantly updating your code and consequently your documentation needs
 to be updated as well, ideally the very same moment the code is deployed to production. You don't want to have a mismatch between the documentation and the latest version of
@@ -22,7 +22,7 @@ knowledge base. Every change that is committed is commented so that there is cla
 Even if you are not deploying new changes often,  treating your documentation as code allows tight version control and ensures your users are always accessing the latest version of
 your documentation. 
 
-## Multimedia and Responsiveness.
+## Display Adaptiveness.
 
 Since it renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences of the users.
 As it can be seen in this demo, it is easy to switch between dark and light themes.
@@ -37,6 +37,18 @@ Embedded mp4 video example (the video file is located inside the github repo)
 
 
 
+## Multimedia and Responsiveness.
+
+Since it renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences of the users.
+As it can be seen in this demo, it is easy to switch between dark and light themes.
+It allows to use different types of media, including embedded videos, youtube videos, images, diagrams, audio files, etc.
+
+Embedded mp4 video example (the video file is located inside the github repo)
+
+<video controls width="100%">
+  <source src={require('./img/video.mp4').default} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 
 ## LLM Ready
@@ -54,7 +66,7 @@ for other crawlers and indexers. Markdown is excellent to define the hierarchy o
 
 In a knowledge base that uses markdown it is possible to embed dynamic artifacts, for example: 
 
-1. The "learn more" accordion:
+### Accordions
 
 <details>
   <summary>Click here to expand and read more</summary>
@@ -67,7 +79,7 @@ In a knowledge base that uses markdown it is possible to embed dynamic artifacts
 </details>
 
 
-2. Callouts for warnings, caution, etc:
+### Callouts
 
 :::note
 This is a standard note callout to highlight important information.
@@ -90,19 +102,19 @@ Critical warning! Use this for dangerous actions or destructive steps.
 :::
 
 
-### 3. Mermaid Diagrams
+### Mermaid Diagrams
 
 The following diagram is not an image, it is code and it can be understood by llms and other machines
 
 ```mermaid
 graph TD
-    A[Start: Write Markdown] --> B{Is it clear?}
-    B -->|Yes| C[Publish to Docusaurus]
-    B -->|No| D[Refine Content]
+    A[Start: Write Markdown] --> B{Are the brainstorm ideas diverse?}
+    B -->|Yes| C[Categorize in Folders]
+    B -->|No| D[Proceed to Ratings]
     D --> A
 ```
 
-### 4. Code Blocks
+### Code Blocks
 If you need to communicate code that can be easily copy and pasted 
 
 ```javascript
@@ -112,3 +124,45 @@ function greetUser(name) {
 greetUser("Developer");
 ```
 
+### HTML and JS reacy
+
+This knowledge base uses [MDX](https://mdxjs.com/docs/what-is-mdx/), which allows you to mix Markdown, raw HTML, and JavaScript right inside the article.
+
+#### A . Standard HTML Styling
+You can use standard HTML tags with inline styles:
+
+<div style={{ padding: '16px', backgroundColor: '#eef2ff', borderRadius: '8px', borderLeft: '4px solid #4f46e5', margin: '20px 0' }}>
+  <p style={{ margin: 0, color: '#1e1b4b' }}>
+    <strong>HTML Box:</strong> This element is written using raw HTML and CSS directly inside the Markdown file.
+  </p>
+</div>
+
+#### B. Interactive JavaScript / Scripts
+You can also attach event handlers and JavaScript functionality using JSX syntax:
+
+<button 
+  onClick={() => alert('Hello! This script ran directly from your Docusaurus markdown file.')}
+  style={{ padding: '10px 20px', backgroundColor: '#25c2a0', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
+>
+  Click This Script Button
+</button>
+
+
+## Batch edits
+
+Since the documentation is code, you can edit it using code tools like Find and Replace.
+In the following image I'm replacing the word 'demo' with 'trial' across all articles in the knowledge base
+
+![Using Find and Replace in Visual Studio Code to replace 'demo' with 'trial'](./img/find.png)
+
+## Navigation and knowledge hierarchy
+
+If you are reading this page using a computer, you are able to see a navigation bar on the left which holds all the Sections, you can open a section 
+and then see all its corresponding articles. On the right side you will see a floating transparent map  which allows you to easily
+move between the sections in the article.
+
+### Dark theme Ready
+
+Users can easily switch to the dark theme
+
+![Switch to activate the dark theme of the knowledge base](./img/dark.png)
