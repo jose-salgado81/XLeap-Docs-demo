@@ -50,27 +50,34 @@ const config = {
 
   plugins: [
     'docusaurus-plugin-image-zoom',
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-1RGM43S25Q', // Replace with your actual GA4 Measurement ID
+        anonymizeIP: true,
+      },
+    ],
   ],
 
   presets: [
-  [
-    'classic',
-    /** @type {import('@docusaurus/preset-classic').Options} */
-    ({
-      docs: {
-        sidebarPath: './sidebars.js',
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        //editUrl:
-        //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-      },
-      blog: false, // Disables the blog plugin completely
-      theme: {
-        customCss: './src/css/custom.css',
-      },
-    }),
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: false, // Disables the blog plugin completely
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
   ],
-],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -88,26 +95,25 @@ const config = {
         },
       },
       navbar: {
-  title: 'XLeap Docs',
-  logo: {
-    alt: 'XLeap Logo',
-    src: 'img/xleapicon.svg',
-  },
-  items: [
-    {
-      type: 'docSidebar',
-      sidebarId: 'tutorialSidebar',
-      position: 'left',
-      label: 'Knowledge Base',
-    },
-    // {to: '/blog', label: 'Blog', position: 'left'},
-    // The GitHub item has been removed here
-  ],
-},
+        title: 'XLeap Docs',
+        logo: {
+          alt: 'XLeap Logo',
+          src: 'img/xleapicon.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Knowledge Base',
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // The GitHub item has been removed here
+        ],
+      },
       footer: {
         style: 'dark',
         links: [
-         
           {
             title: 'Other Resources',
             items: [
@@ -126,13 +132,13 @@ const config = {
             items: [
               {
                 label: 'This Demo files on GitHub', 
-                href: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',                
+                href: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',             
               },
               {
                 label: 'The Docusaurus engine',
                 href: 'https://docusaurus.io/',
               },
-            {
+              {
                 label: 'Deployed using Vercel',
                 href: 'https://vercel.com/frameworks/nextjs',
               },
@@ -149,5 +155,3 @@ const config = {
 };
 
 export default config;
-
-
