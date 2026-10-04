@@ -7,7 +7,7 @@ sidebar_position: 1
 You might be wondering why would you want a knowledge base, when the documentation of your software (including SaaS) can be contained in a standard PDF file. In this article
  you will learn why a knowledge base is a superior approach to software documentation.
 
-## Continuous Updates and Version Control
+## 1. Continuous Updates and Version Control
 
 In a Continuous Integration/Continuous Deployment workflow, documentation must evolve alongside your code to prevent mismatches.
  The Docs-as-Code approach manages your knowledge base in a Git repository like GitHub, allowing team members to draft and 
@@ -18,29 +18,26 @@ In a Continuous Integration/Continuous Deployment workflow, documentation must e
 ![Git Comment](./img/git%20comment.png)
 
 
-## Display Adaptiveness and Dark Theme
+## 2. Display Adaptiveness and Dark Theme
 
 Since the knowledge base renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences.
 It is easy to switch between dark and light themes.
 
 ![Switch to activate the dark theme of the knowledge base](./img/dark.png)
 
+## 3. Multimedia and Responsiveness.
 
+Markdown allows to embed different types of media, including videos, youtube, animated gifs, json diagrams, etc.
 
-
-
-## Multimedia and Responsiveness.
-
-Since it renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences of the users.
-As it can be seen in this demo, it is easy to switch between dark and light themes.
-It allows to use different types of media, including embedded videos, youtube videos, images, diagrams, audio files, etc.
-
-Embedded mp4 video example (the video file is located inside the github repo)
+Embedded mp4 video example (the video file is located inside the knowledge base github repo, this means the media from each section is stored within its corresponding folder)
 
 <video controls width="100%">
   <source src={require('./img/video.mp4').default} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+![This is an animated gif image showing project media files](./img/animated.gif)
+
 
 
 ## LLM Ready
