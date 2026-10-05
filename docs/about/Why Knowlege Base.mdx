@@ -142,8 +142,40 @@ You can also attach event handlers and JavaScript functionality using JSX syntax
   Click This Script Button
 </button>
 
+## 6. LLM Assistant Ready
 
-## 6. Batch edits
+The latest stable release of Chrome (and many other browsers) now include an llm assistant that helps the user "talk" with
+the webpage, the technology behind the articles in this website (markdown, html static site) makes it very effective for the llm assistant to understand 
+the content (it can read the alt tags, for example).
+
+![Chrome browser showing the Gemini assistant tab explaining the KB article](./img/gemini.png)
+
+## 7. Article sharing and interlinking
+
+Very easy for hosts and trainers to share specific sections of the knowledgebase
+
+(image here of a "share this" button)
+
+
+## 8. Analytics
+
+Know which are the most reviewed articles and sections of the documentation. In the case of this knowledge base I have placed a Google Analytics Tag , so on my GA4 dashboard
+I can see which audiences are visiting, where they are landing, what they consult. 
+![GA4 dashboard with stats about visitors to the knowledge base](./img/ga4.png)
+
+Also you can get instant feedback from the user's experience with the "Was this useful" widget, so you can implement a natural selection evolution approach to the curation of the knowledge base.
+Find the vote option at the bottom of the article, the button then can fire a webhook, or save an entry to a mini database (there are several methods available to track the click)
+![was this page useful](./img/vote.png)
+
+## 9. Data Sovereignty 
+
+This KB relies entirely on open-source technologies, meaning no third party controls its display or vendor-locks your content. 
+
+Unlike commercial platforms such as **[Readme](https://readme.io)** and **[GitBook](https://www.gitbook.com)**—which force you to depend 
+on proprietary hosting and tooling—the system generating this KB runs locally on your computer. You retain complete ownership and can 
+migrate your hosting provider or deploy to any cloud compute or container platform at any time.
+
+## 11 . Batch edits
 
 Since the documentation is code, you can edit it using code tools like Find and Replace.
 In the following image I'm replacing the word 'demo' with 'trial' across all articles in the knowledge base
@@ -154,42 +186,4 @@ In the following image I'm replacing the word 'demo' with 'trial' across all art
 
 If you are reading this page using a computer, you are able to see a navigation bar on the left which holds all the Sections, you can open a section 
 and then see all its corresponding articles. On the right side you will see a floating transparent map  which allows you to easily
-move between the sections in the article.
-
-
-
-
-
-
-## 7. LLM Assistant Ready
-
-The latest stable release of Chrome (and many other browsers) now include an llm assistant that helps the user "talk" with
-the webpage, the technology behind the articles in this website (markdown, html static site) makes it very effective for the llm assistant to understand 
-the content (it can read the alt tags, for example).
-
-![Chrome browser showing the Gemini assistant tab explaining the KB article](./img/gemini.png)
-
-## 8. Article sharing and interlinking
-
-Very easy for hosts and trainers to share specific sections of the knowledgebase
-
-(image here of a "share this" button)
-
-
-## 9. Analytics
-
-Know which are the most reviewed articles and sections of the documentation. In the case of this knowledge base I have placed a Google Analytics Tag , so on my GA4 dashboard
-I can see which audiences are visiting, where they are landing, what they consult. 
-![GA4 dashboard with stats about visitors to the knowledge base](./img/ga4.png)
-
-Also you can get instant feedback from the user's experience with the "Was this useful" widget, so you can implement a natural selection evolution approach to the curation of the knowledge base.
-Find the vote option at the bottom of the article, the button then can fire a webhook, or save an entry to a mini database (there are several methods available to track the click)
-![was this page useful](./img/vote.png)
-
-## 10. Data Sovereignty 
-
-This knowledge base relies entirely on open-source technologies, meaning no third party controls its display or vendor-locks your content. 
-
-Unlike commercial platforms such as **[Readme](https://readme.io)** and **[GitBook](https://www.gitbook.com)**—which force you to depend 
-on proprietary hosting and tooling—the system generating this KB runs locally on your computer. You retain complete ownership and can 
-migrate your hosting provider or deploy to any cloud compute or container platform at any time.
+move between the sections in the article. This allows readers to be aware of the broader context in which the current screen content exists.
