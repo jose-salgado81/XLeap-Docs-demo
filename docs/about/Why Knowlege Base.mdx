@@ -20,7 +20,7 @@ In a Continuous Integration/Continuous Deployment workflow, documentation must e
 
 ## 2. Display Adaptiveness and Dark Theme
 
-Since the knowledge base renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences.
+Since the KB renders on the browser as a webpage, the display is adaptive and displays according to the device screen and the browser preferences.
 It is easy to switch between dark and light themes.
 
 ![Switch to activate the dark theme of the knowledge base](./img/dark.png)
@@ -43,26 +43,25 @@ The following is an animaged gif image (833 Kbs in size)
 
 
 
-## LLM Ready
+## 4. LLMs Ready
 
-LLMs like ChatGPT and Gemini learn about software by processing websites and user manuals. While they accept various file types, they prefer Markdown because it is machine-readable and explicitly structures knowledge hierarchy and priority.
-
+LLMs like ChatGPT and Gemini learn about software by processing websites and user manuals. While they learn from various file types, they prefer Markdown language, since it is machine-readable and explicitly structures knowledge hierarchy and mark up.
 Key advantages of Markdown for LLMs:
 
-Image Context: Models can read alt tags to reference images even if they aren't multimodal.
+- Image Context: Models can read alt tags to reference images even if they aren't multimodal.
 
-LLM-Specific Instructions: Allows embedding notes and guidance directly for model interpretation.
+- LLM-Specific Instructions: Allows embedding notes and guidance directly for model interpretation.
 
-Metadata Support: Easily incorporates SEO tags and markers for crawlers and indexers.
+- Metadata Support: Easily incorporates SEO tags and markers for crawlers and indexers.
 
 Learn more at: [Why Markdown is the Best Format for LLMs](https://medium.com/@wetrocloud/why-markdown-is-the-best-format-for-llms-aa0514a409a7)
 
 
-## Artifacts
+## 5. Artifacts
 
 In a knowledge base that uses markdown it is possible to embed dynamic artifacts, for example: 
 
-### Accordions
+### 5.1 Accordions
 
 <details>
   <summary>Click here to expand and read more</summary>
@@ -75,7 +74,7 @@ In a knowledge base that uses markdown it is possible to embed dynamic artifacts
 </details>
 
 
-### Callouts
+### 5.2 Callouts
 
 :::note
 This is a standard note callout to highlight important information.
@@ -98,7 +97,7 @@ Critical warning! Use this for dangerous actions or destructive steps.
 :::
 
 
-### Mermaid Diagrams
+### 5.3 Mermaid Diagrams
 
 The following diagram is not an image, it is code and it can be understood by llms and other machines
 
@@ -110,7 +109,7 @@ graph TD
     D --> A
 ```
 
-### Code Blocks
+### 5.4 Code Blocks
 If you need to communicate code that can be easily copy and pasted 
 
 ```javascript
@@ -120,7 +119,7 @@ function greetUser(name) {
 greetUser("Developer");
 ```
 
-### HTML and JS reacy
+### 5.5 HTML and JS ready
 
 This knowledge base uses [MDX](https://mdxjs.com/docs/what-is-mdx/), which allows you to mix Markdown, raw HTML, and JavaScript right inside the article.
 
@@ -144,7 +143,7 @@ You can also attach event handlers and JavaScript functionality using JSX syntax
 </button>
 
 
-## Batch edits
+## 6. Batch edits
 
 Since the documentation is code, you can edit it using code tools like Find and Replace.
 In the following image I'm replacing the word 'demo' with 'trial' across all articles in the knowledge base
@@ -162,7 +161,7 @@ move between the sections in the article.
 
 
 
-## LLM Assistant Ready
+## 7. LLM Assistant Ready
 
 The latest stable release of Chrome (and many other browsers) now include an llm assistant that helps the user "talk" with
 the webpage, the technology behind the articles in this website (markdown, html static site) makes it very effective for the llm assistant to understand 
@@ -170,14 +169,14 @@ the content (it can read the alt tags, for example).
 
 ![Chrome browser showing the Gemini assistant tab explaining the KB article](./img/gemini.png)
 
-## Article sharing and interlinking
+## 8. Article sharing and interlinking
 
 Very easy for hosts and trainers to share specific sections of the knowledgebase
 
 (image here of a "share this" button)
 
 
-## Analytics
+## 9. Analytics
 
 Know which are the most reviewed articles and sections of the documentation. In the case of this knowledge base I have placed a Google Analytics Tag , so on my GA4 dashboard
 I can see which audiences are visiting, where they are landing, what they consult. 
@@ -186,3 +185,11 @@ I can see which audiences are visiting, where they are landing, what they consul
 Also you can get instant feedback from the user's experience with the "Was this useful" widget, so you can implement a natural selection evolution approach to the curation of the knowledge base.
 Find the vote option at the bottom of the article, the button then can fire a webhook, or save an entry to a mini database (there are several methods available to track the click)
 ![was this page useful](./img/vote.png)
+
+## 10. Data Sovereignty 
+
+This knowledge base relies entirely on open-source technologies, meaning no third party controls its display or vendor-locks your content. 
+
+Unlike commercial platforms such as **[Readme](https://readme.io)** and **[GitBook](https://www.gitbook.com)**—which force you to depend 
+on proprietary hosting and tooling—the system generating this KB runs locally on your computer. You retain complete ownership and can 
+migrate your hosting provider or deploy to any cloud compute or container platform at any time.
