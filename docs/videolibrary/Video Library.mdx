@@ -11,7 +11,8 @@ the goal here is just to show ideas on what can be done.
 ##  YouTube video
 
 In the following example I will embed a youtube video with attributes that will allow fullscreen display on any device
-the code I will use is 
+the code I will use is:  
+
 
 ```jsx
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
@@ -25,8 +26,24 @@ the code I will use is
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
   </iframe>
 </div>
-```
-If it is too big, I can edit the style attributes to:     `style={{ position: 'absolute', top: 0, left: 0, width: '50%', height: '50%' }}>`
+```  
+
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+  <iframe 
+    src="https://www.youtube.com/embed/l1E2oLydIRM?si=k36wNcjU-99rpnJK" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+  </iframe>
+</div>  
+  
+
+
+If it is too big, I can edit the style attributes to  50%:    
+
 
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
   <iframe 
@@ -39,3 +56,13 @@ If it is too big, I can edit the style attributes to:     `style={{ position: 'a
     style={{ position: 'absolute', top: 0, left: 0, width: '50%', height: '50%' }}>
   </iframe>
 </div>
+  
+##  Local video
+
+  Now I'm going to embed a "local" video. Among the advantages of using local files is that visitors remain in the KB and that no third party CTAs or ads are shown. Also it is possible to
+  add controls to the browser media player (show captions, speed)
+
+<video controls width="25%">
+  <source src={require('./img/local.mp4').default} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
