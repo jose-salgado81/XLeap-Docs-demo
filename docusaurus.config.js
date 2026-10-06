@@ -66,12 +66,17 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false, // Disables the blog plugin completely
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -107,8 +112,7 @@ const config = {
             position: 'left',
             label: 'Knowledge Base',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          // The GitHub item has been removed here
+          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
@@ -132,7 +136,7 @@ const config = {
             items: [
               {
                 label: 'This Demo files on GitHub', 
-                href: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',             
+                href: 'https://github.com/jose-salgado81/XLeap-Docs-demo/tree/main/docs',            
               },
               {
                 label: 'The Docusaurus engine',
