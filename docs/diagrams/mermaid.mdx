@@ -1,0 +1,38 @@
+---
+title: Mermaid
+description: Learn how to create Mermaid diagrams inside the XLeap knowledge base.
+sidebar_label: Mermaid
+---
+
+Mermaid lets you describe diagrams as simple text and render them into visual flowcharts, sequence diagrams, and more.
+
+This is especially useful when you want to explain a process or architecture directly inside your documentation.
+
+```mermaid
+flowchart LR
+    A[Idea] --> B[Document it]
+    B --> C[Create diagram]
+    C --> D[Publish article]
+    D --> E[Share with readers]
+```
+
+## Why use Mermaid?
+
+- Simple syntax that lives in the same markdown file as the content
+- Easy to maintain alongside documentation updates
+- Great for process flows, architecture diagrams, and decision trees
+
+## Example: a content workflow
+
+```mermaid
+sequenceDiagram
+    participant Author as Author
+    participant Docs as Knowledge base
+    participant Reader as Reader
+
+    Author->>Docs: Publish article
+    Docs-->>Reader: Share updated guidance
+    Reader->>Author: Ask follow-up questions
+```
+
+Mermaid keeps visual explanations lightweight and readable, which makes it a good fit for a knowledge base that needs both clarity and speed.
