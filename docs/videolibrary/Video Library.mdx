@@ -4,6 +4,38 @@ sidebar_position: 2
 
 # Video Library
 
-In this section of the knowledge base (KB) I'll try to design a gallery for xleap videos (tutorials + promos)
+In this section I'll try to showcase the capabilities for including video in the KB. Ideally the videos should be embedded in their corresponding articles,
+the goal here is just to show ideas on what can be done.
 
 
+##  YouTube video
+
+In the following example I will embed a youtube video with attributes that will allow fullscreen display on any device
+the code I will use is 
+
+```jsx
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+  <iframe 
+    src="https://www.youtube.com/embed/l1E2oLydIRM?si=k36wNcjU-99rpnJK" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+  </iframe>
+</div>
+```
+If it is too big, I can edit the style attributes to:     `style={{ position: 'absolute', top: 0, left: 0, width: '50%', height: '50%' }}>`
+
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+  <iframe 
+    src="https://www.youtube.com/embed/l1E2oLydIRM?si=k36wNcjU-99rpnJK" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '50%', height: '50%' }}>
+  </iframe>
+</div>
