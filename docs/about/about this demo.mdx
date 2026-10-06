@@ -10,34 +10,33 @@ This demo aims at showcasing:
   3. The advantages of using a live Knowledge Base as opposed to a PDF file.
  
 
-## Technologies used in this demo
+## Production pipeline (processes) 
 
-The content itself is written in Markdown (a markup language like HTML but simpler, lighter, and more readable, it is the industry standard for documentation).
-So this is how it looks like as I am writting this content using Visual Studio Code.
+### Step 1. The content is written in Markdown (a markup language like HTML but simpler, lighter, and more readable, it is the industry standard for documentation).
+So this is how it looks like as I am writting this article using Visual Studio Code:
 
 ![Writing this article in VSC](./img/writing.png)
 
-Step 2. Build static site with Docusaurus
+### Step 2. Run Build on terminal and preview changes locally (docusaurus engine)
 
-Docusausus is a free, open-source engine contributed by Meta to the open source community. 
+Docusausus is a free, open-source static site engine contributed by Meta to the open source community. 
 I download and install docusaurus on my computer.
 Docusaurus is React based, so it uses javascript and React to render the content into a lightweight, fast, and responsive website.
 
-once the content is written I run Docusaurus (a static site generator) to convert the Markdown files into a website.
+once the content is written in markdown I run Docusaurus:
 
 ![Building the static site](./img/build.png)
 
-Step 3. Push changes to GitHub
+### Step 3. Push changes to GitHub
 
 I have git and github (version control) on my computer so I have added the project folder to a git repository and pushed it to my github account.
 I comment each commit in case it is necessary to roll back the specific changes in this commit.
 ![Committing and commenting changes pushed to Github(./img/github.png)
 
-4. Vercel senses changes in Github, pulls the changes and deploys a new release.
+### Step 4. Vercel deployment server updates automatically to new release.
 
 So finally I used Vercel to deploy the website. Vercel is a cloud platform for static sites and serverless functions that fits perfectly with Docusaurus. 
-It is free for personal projects and it is very easy to use. However, the website can also be deployed on GitHub Pages, which is a free hosting service 
-for static websites provided by GitHub. It can also be deployed on any other paid hosting service that supports static websites (for example an azure web app).
+It is free for personal projects and it is very easy to use. However, the website can also be deployed on any other free or paid hosting service that supports static websites (for example an azure web app).
 
 ![Vercel updates deployment(./img/vercel.png)
 
