@@ -1,5 +1,5 @@
 yangshun:
-  name: Yangshun Tay
+  name: Example Author
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
   url: https://linkedin.com/in/yangshun
   image_url: https://github.com/yangshun.png
@@ -10,16 +10,12 @@ yangshun:
     github: yangshun
     newsletter: https://www.greatfrontend.com
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+jose:
+  name: Jose Manuel Salgado
+  title: KB maintainer
+  url: https://x-leap-docs-demo.vercel.app/docs/about/about%20the%20author
+  image_url: https://avatars.githubusercontent.com/u/113651461?v=4
+  page: true
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: jose-salgado81
+    github: jose-salgado81
