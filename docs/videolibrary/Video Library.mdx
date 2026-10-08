@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+
+
 # Video Library
 
 In this section I'll try to showcase the capabilities for including video in the KB. Ideally the videos should be embedded in their corresponding articles,
@@ -63,3 +65,15 @@ If it is too big, I can edit the style attributes to  50%:
   <source src={require('./img/local.mp4').default} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+
+  
+    
+    The following is a test to see if it is possible to embed a "card" in the middle of a local mp4 video that references to another video in the library, 
+    or even an article in the knowledge base. a react component is sensing the browser player and detects when it reaches second 10 and displays the card,
+    all aspects of the card can be customized. 
+
+    
+import InteractiveVideo from '@site/src/components/InteractiveVideo';
+
+<InteractiveVideo /> 
