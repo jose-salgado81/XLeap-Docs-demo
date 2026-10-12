@@ -40,6 +40,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Support Chatbot',
+      link: {type: 'generated-index'},
+      items: ['support-chatbot/support-chatbot'],
+    },
+    {
+      type: 'category',
       label: 'Multilingual',
       link: {type: 'generated-index'},
       items: ['multilingual/multilingual'],
