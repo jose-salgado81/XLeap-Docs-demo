@@ -52,13 +52,13 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Invitation Dialogue',
+      label: 'Example section: Invitation Dialogue',
       link: {type: 'generated-index'},
       items: ['invitationdialogue/Login Requirements'],
     },
     {
       type: 'category',
-      label: 'Process Designer',
+      label: 'Example section: Process Designer',
       link: {type: 'generated-index'},
       items: ['process_designer/intro_to_process_designer'],
     },
