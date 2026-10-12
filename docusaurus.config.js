@@ -68,6 +68,12 @@ const config = {
         blogRouteBasePath: '/blog',
       },
     ],
+    [
+      '@docusaurus/plugin-vercel-analytics',
+      {
+        mode: 'auto',
+      },
+    ],
   ],
 
   presets: [
